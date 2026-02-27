@@ -32,6 +32,10 @@ def home_page(request):
     fan_news_2 = News.published.all().filter(category__name="Texnologiya").order_by('-publish_time')[1]
     fan_news_3 = News.published.all().filter(category__name="Texnologiya").order_by('-publish_time')[2]
     fan_news_4 = News.published.all().filter(category__name="Texnologiya").order_by('-publish_time')[3]
+    sport_news_1 = News.published.all().filter(category__name="Sport").order_by('-publish_time')[0]
+    sport_news_2 = News.published.all().filter(category__name="Sport").order_by('-publish_time')[1]
+    sport_news_3 = News.published.all().filter(category__name="Sport").order_by('-publish_time')[2]
+    sport_news_4 = News.published.all().filter(category__name="Sport").order_by('-publish_time')[3]
     context = {
         'news_list': news_list,
         'mixin_news': mixin_news,
@@ -43,7 +47,11 @@ def home_page(request):
         'fan_news_1': fan_news_1,
         'fan_news_2': fan_news_2,
         'fan_news_3': fan_news_3,
-        'fan_news_4': fan_news_4
+        'fan_news_4': fan_news_4,
+        'sport_news_1':sport_news_1,
+        'sport_news_2': sport_news_2,
+        'sport_news_3': sport_news_3,
+        'sport_news_4': sport_news_4,
     }
 
     return render(request, 'news/index.html', context=context)
