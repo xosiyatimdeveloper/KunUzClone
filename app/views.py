@@ -13,12 +13,12 @@ def news_list(request):
 
     return render(request, 'news/news_list.html', context=context)
 
-def news_detail(request, id):
-    news = get_object_or_404(News, id=id, status=News.Status.Published)
+def news_detail(request, news):
+    news = get_object_or_404(News, slug=news, status=News.Status.Published)
     context = {
         'news': news
     }
-    return render(request, 'news/news_detail.html', context=context)
+    return render(request, 'news/comments.html', context)
 
 def home_page(request):
     news_list = News.objects.filter(status=News.Status.Published)

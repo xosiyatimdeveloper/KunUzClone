@@ -18,7 +18,7 @@
                                     href="">So'nggi yangiliklar</a>
                                 <a class="text-white" href="">{{ news.publish_time }}</a>
                             </div>
-                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="">{{ news.title }}</a>
+                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="{{ news.get_absolute_url}}">{{ news.title }}</a>
                         </div>
                     </div>
                     {% endfor %}
@@ -35,7 +35,7 @@
                                         href="">O'zbekiston</a>
                                     <a class="text-white" href=""><small>{{ uzb_news_1.publish_time }}</small></a>
                                 </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">{{ uzb_news_1.title | truncatewords:5 }}</a>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="{{ uzb_news_1.get_absolute_url}}">{{ uzb_news_1.title | truncatewords:5 }}</a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                                         href="">O'zbekiston</a>
                                     <a class="text-white" href=""><small>{{ uzb_news_2.publish_time }}</small></a>
                                 </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">{{ uzb_news_2.title | truncatewords:5 }}</a>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="{{ uzb_news_2.get_absolute_url}}">{{ uzb_news_2.title | truncatewords:5 }}</a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                                         href="">O'zbekiston</a>
                                     <a class="text-white" href=""><small>{{ uzb_news_3.publish_time }}</small></a>
                                 </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">{{ uzb_news_3.title | truncatewords:5 }}</a>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="{{ uzb_news_3.get_absolute_url}}">{{ uzb_news_3.title | truncatewords:5 }}</a>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                                         href="">O'zbekiston</a>
                                     <a class="text-white" href=""><small>{{ uzb_news_4.publish_time }}</small></a>
                                 </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">{{ uzb_news_4.title | truncatewords:5 }}</a>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="{{ uzb_news_4.get_absolute_url}}">{{ uzb_news_4.title | truncatewords:5 }}</a>
                             </div>
                         </div>
                     </div>
@@ -94,8 +94,8 @@
                         <div class="bg-primary text-dark text-center font-weight-medium py-2" style="width: 170px;">Muhim yangiliklar</div>
                         <div class="owl-carousel tranding-carousel position-relative d-inline-flex align-items-center ml-3"
                             style="width: calc(100% - 170px); padding-right: 90px;">
-                            <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold" href="">Xalqaro fan olimpiadalarida oltin medal olgan yoshlarga 1 mlrd so‘mdan ortiq mukofot to‘lanadi</a></div>
-                            <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold" href="">mukofot to‘lanadi.Xalqaro fan olimpiadalarida oltin medal olgan yoshlarga 1 mlrd so‘mdan ortiq mukofot to‘lanadi</a></div>
+                            <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold" href="{{ sport_news_2.get_absolute_url}}">{{ sport_news_2.title }}</a></div>
+                            <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold" href="{{ sport_news_2.get_absolute_url}}">{{ sport_news_2.title }}</a></div>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                                 href="">jahon</a>
                             <a class="text-white" href=""><small>{{ new.publish_time }}</small></a>
                         </div>
-                        <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">{{ new.title | truncatewords:5 }}</a>
+                        <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="{{ new.get_absolute_url}}">{{ new.title | truncatewords:5 }}</a>
                     </div>
                 </div>
                 {% endfor %}
@@ -150,7 +150,7 @@
                                     <div class="mb-2">
                                         <a class="text-body" href=""><small>{{ fan_news_1.publish_time}}</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">{{ fan_news_1.title | truncatewords:5 }}</a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="{{ fan_news_1.get_absolute_url}}">{{ fan_news_1.title | truncatewords:5 }}</a>
                                     <p class="m-0">{{ fan_news_1.body | truncatewords:10 }}</p>
                                 </div>
 <!--                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">-->
@@ -172,7 +172,7 @@
                                     <div class="mb-2">
                                         <a class="text-body" href=""><small>{{ fan_news_2.publish_time}}</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">{{ fan_news_2.title | truncatewords:5 }}</a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="{{ fan_news_2.get_absolute_url}}">{{ fan_news_2.title | truncatewords:5 }}</a>
                                     <p class="m-0">{{ fan_news_2.body | truncatewords:10 }}</p>
                                 </div>
 <!--                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">-->
@@ -194,7 +194,7 @@
                                     <div class="mb-2">
                                         <a class="text-body" href=""><small>{{ fan_news_3.publish_time}}</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">{{ fan_news_3.title | truncatewords:5 }}</a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="{{ fan_news_3.get_absolute_url}}">{{ fan_news_3.title | truncatewords:5 }}</a>
                                     <p class="m-0">{{ fan_news_3.body | truncatewords:10 }}</p>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@
                                     <div class="mb-2">
                                         <a class="text-body" href=""><small>{{ fan_news_4.publish_time}}</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">{{ fan_news_4.title | truncatewords:5 }}</a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="{{ fan_news_4.get_absolute_url}}">{{ fan_news_4.title | truncatewords:5 }}</a>
                                     <p class="m-0">{{ fan_news_4.body | truncatewords:10 }}</p>
                                 </div>
                             </div>
@@ -278,7 +278,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Sport</a>
                                         <a class="text-body" href=""><small>{{ sport_news_1.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ sport_news_1.title}}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ sport_news_1.get_absolute_url }}">{{ sport_news_1.title}}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -288,7 +288,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Sport</a>
                                         <a class="text-body" href=""><small>{{ sport_news_2.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ sport_news_2.title}}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ sport_news_2.get_absolute_url }}">{{ sport_news_2.title}}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -298,7 +298,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Sport</a>
                                         <a class="text-body" href=""><small>{{ sport_news_3.publish_time}}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ sport_news_3.title}}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ sport_news_3.get_absolute_url }}">{{ sport_news_3.title}}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -308,7 +308,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Sport</a>
                                         <a class="text-body" href=""><small>{{ sport_news_4.publish_time}}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ sport_news_4.title}}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ sport_news_4.get_absolute_url }}">{{ sport_news_4.title}}</a>
                                 </div>
                             </div>
                         </div>

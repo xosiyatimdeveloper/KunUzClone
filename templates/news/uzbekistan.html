@@ -24,7 +24,7 @@
                                             href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_1.publish_time }}</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_1.title | truncatewords:5 }}</a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_1.get_absolute_url }}">{{ uzb_news_1.title | truncatewords:5 }}</a>
                                     <p class="m-0">{{ uzb_news_1.body | truncatewords:15 }}</p>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                             href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_2.publish_time }}</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_2.title | truncatewords:7 }}</a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_2.get_absolute_url }}">{{ uzb_news_2.title | truncatewords:7 }}</a>
                                     <p class="m-0">{{ uzb_news_2.title | truncatewords:15 }}</p>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                                             href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_3.publish_time }}</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_3.title | truncatewords:5 }}</a>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_3.get_absolute_url }}">{{ uzb_news_3.title | truncatewords:5 }}</a>
                                     <p class="m-0">{{ uzb_news_3.body | truncatewords:15 }}</p>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@
                                             href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_4.publish_time}}</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_4.title | truncatewords:8 }}</a>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_4.get_absolute_url }}">{{ uzb_news_4.title | truncatewords:8 }}</a>
                                     <p class="m-0">{{ uzb_news_4.body | truncatewords:35 }}</p>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_5.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_5.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_5.get_absolute_url }}">{{ uzb_news_5.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -89,7 +89,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_6.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_6.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_6.get_absolute_url }}">{{ uzb_news_6.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_7.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_7.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_7.get_absolute_url }}">{{ uzb_news_7.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -111,7 +111,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_8.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_8.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_8.get_absolute_url }}">{{ uzb_news_8.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                                                 href="">O'zbekiston</a>
                                             <a class="text-body" href=""><small>{{ uzb_news_9.publish_time }}</small></a>
                                         </div>
-                                        <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_9.title | truncatewords:10 }}</a>
+                                        <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_9.get_absolute_url }}">{{ uzb_news_9.title | truncatewords:10 }}</a>
                                         <p class="m-0">{{ uzb_news_9.body | truncatewords:15 }}</p>
                                     </div>
                                     <div class="d-flex justify-content-between bg-white border-top mt-auto p-4">
@@ -143,7 +143,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_10.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_10.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_10.get_absolute_url }}">{{ uzb_news_10.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -153,7 +153,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_11.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_11.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_11.get_absolute_url }}">{{ uzb_news_11.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_12.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_12.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_12.get_absolute_url }}">{{ uzb_news_12.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -175,7 +175,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_13.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_13.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_13.get_absolute_url }}">{{ uzb_news_13.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +241,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_15.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_15.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_15.get_absolute_url }}">{{ uzb_news_15.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -251,7 +251,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_1.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_1.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_1.get_absolute_url }}">{{ uzb_news_1.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -261,7 +261,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_9.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_9.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_9.get_absolute_url }}">{{ uzb_news_9.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -271,7 +271,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_11.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_11.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_11.get_absolute_url }}">{{ uzb_news_11.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -281,7 +281,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">O'zbekiston</a>
                                         <a class="text-body" href=""><small>{{ uzb_news_14.publish_time }}</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ uzb_news_14.title | truncatewords:10 }}</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ uzb_news_14.get_absolute_url }}">{{ uzb_news_14.title | truncatewords:10 }}</a>
                                 </div>
                             </div>
                         </div>

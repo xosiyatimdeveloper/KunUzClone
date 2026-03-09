@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.urls import reverse
 
 
 class PublishedManager(models.Manager):
@@ -34,6 +35,8 @@ class News(models.Model):
     objects = models.Manager()
     published = PublishedManager()
 
+    def get_absolute_url(self):
+        return reverse("news_detail_page", args=[self.slug])
 
     class Meta:
         ordering = ['-publish_time']

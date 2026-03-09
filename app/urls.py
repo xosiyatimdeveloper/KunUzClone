@@ -9,5 +9,5 @@ urlpatterns = [
     path('sport/', sport_page, name='sport_page'),
     path('fan/', fan_page, name='fan_page'),
     path('contact/' ,contact_page, name='contact_page'),
-    path("news/<int:id>/", news_detail, name='news_detail_page')
+    path('news/<slug:news>/', news_detail, name='news_detail_page')
 ]
